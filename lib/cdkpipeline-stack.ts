@@ -16,7 +16,7 @@ export class MyPipelineStack extends cdk.Stack {
     });
     pipeline.addStage(new PipelineStage(this, "test", {
       env: { account: "339446593358", region: "us-west-2" },
-      stackName: 'KBBR'
+      // stackName: 'KBBR'
     }));
   }
 }
