@@ -8,7 +8,7 @@ export class MyPipelineAppStage extends cdk.Stage {
       super(scope, id, props);
 
       const s3stack = new stacktest(this, 'LambdaStack', {
-        stackName: "KBBR",
+        // stackName: "KBBR",
         env: { account: "339446593358", region: "us-west-2" }
       });
     }
